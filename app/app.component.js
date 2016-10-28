@@ -8,21 +8,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
+var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
         this.title = 'Tour of Puppies';
     }
+    AppComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'hero-app',
+            template: "\n    <h1>{{title}}!</h1>\n    <nav>\n      <a\n        routerLink=\"/heroes\"\n        routerLinkActive=\"active\">\n        Heroes\n      </a>\n      <a\n        routerLink=\"/dashboard\"\n        routerLinkActive=\"active\">\n        Dashboard\n      </a>\n    </nav>\n    <router-outlet></router-outlet>\n  ",
+            styleUrls: ['app.component.css']
+        }), 
+        __metadata('design:paramtypes', [])
+    ], AppComponent);
     return AppComponent;
 }());
-AppComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'hero-app',
-        template: "\n    <h1>{{title}}!</h1>\n    <nav>\n      <a\n        routerLink=\"/heroes\"\n        routerLinkActive=\"active\">\n        Heroes\n      </a>\n      <a\n        routerLink=\"/dashboard\"\n        routerLinkActive=\"active\">\n        Dashboard\n      </a>\n    </nav>\n    <router-outlet></router-outlet>\n  ",
-        styleUrls: ['app.component.css']
-    }),
-    __metadata("design:paramtypes", [])
-], AppComponent);
 exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map
